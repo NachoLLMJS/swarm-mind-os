@@ -27,4 +27,7 @@ test('Swarm Mind OS exposes the official X account and Robinhood identity withou
   assert.match(css, /\.social-link\{/);
   assert.match(css, /@media\(max-width:1100px\)\{body\{overflow:auto\}/);
   assert.match(css, /@media\(max-width:620px\)\{\.online\{display:none\}\.social-link\{height:44px;/);
+  assert.match(html, /id="amountInput"[^>]+max="1000000"/);
+  assert.match(js, /MAX_RESEARCH_AMOUNT=1_000_000/);
+  assert.match(js, /amount>MAX_RESEARCH_AMOUNT/);
 });

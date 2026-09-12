@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050706" />
+    <meta name="description" content="AI-assisted Robinhood Chain token research powered by Swarm Mind OS" />
+    <title>SWARM MIND OS</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Swarm Mind OS home"><b>SWARM MIND</b><i>/</i><span>OS</span><em>·</em></a>
+        <nav aria-label="Primary navigation">
+          <a class="active" href="#terminal">Terminal</a><a href="#agents">Agents</a><a href="#routes">Routes</a><a href="#memory">Memory</a><a href="#docs">Docs</a>
+        </nav>
+        <div class="header-actions"><span class="online"><i></i> RESEARCH ONLY</span><a class="outline social-link" href="https://x.com/SwarmmindOS" target="_blank" rel="noopener noreferrer" aria-label="Open Swarm Mind OS on X">X <span>↗</span></a></div>
+      </header>
+
+      <main class="console-shell" id="terminal">
+        <aside class="left-rail">
+          <section class="intro">
+            <p class="kicker">AI-ASSISTED ROBINHOOD RESEARCH</p>
+            <h1>Flies that find<br/>and assess tokens.</h1>
+            <p>Specialized AI roles review supplied Robinhood Chain information, debate risk and assemble one read-only research response.</p>
+          </section>
+          <section class="rail-stat"><strong>5</strong><span>research roles</span><i></i></section>
+          <section class="rail-stat"><strong>AI</strong><span>structured review</span></section>
+          <section class="rail-stat"><strong>ON</strong><span>observer mode</span></section>
+          <section class="rail-stat"><strong>0</strong><span>orders submitted</span></section>
+          <section class="mini-fly" aria-hidden="true"><div id="miniFly"></div><p>distributed intelligence<br/>server-side research</p></section>
+          <footer><b>SWARM MIND OS</b><span>// built for Robinhood Chain</span></footer>
+        </aside>
+
+        <section class="stage-column">
+          <div class="stage-head">
+            <div><h2>RESEARCH SWARM</h2><p>AI roles reason over one token question<span class="cursor">_</span></p></div>
+            <div class="telemetry"><span>workflow visualization</span><b><i></i> 5 roles</b></div>
+          </div>
+          <div id="swarmCanvas" aria-label="Five point.jsfly agents rendered as connected Three.js points error? no. Five Threefly agents"></div>
+          <div class="stage-noise" aria-hidden="true"></div>
+          <div class="core-copy">
+            <small>RESEARCH ROUTE</small><b>ASK</b><span>signal · question · review</span><strong>5</strong><em>roles</em><i></i>
+          </div>
+          <div class="agent-card agent-a"><label><i></i> SCANNER <b></b></label><small>discover · inspect · rank</small><p>Organizes supplied facts and identifies missing token data.</p></div>
+          <div class="agent-card agent-b"><label><i></i> RISK <b></b></label><small>question · verify · score</small><p>Highlights uncertainty and flags claims that require external verification.</p></div>
+          <div class="agent-card agent-c"><label><i></i> ROUTER <b></b></label><small>compare · research · protect</small><p>Suggests read-only research paths without producing a live quote.</p></div>
+          <div class="agent-card agent-d"><label><i></i> SENTINEL <b></b></label><small>watch · pause · defend</small><p>No transaction is submitted while agents evaluate the route.</p></div>
+          <div class="agent-card agent-e"><label><i></i> EXECUTOR <b></b></label><small>review · report · track</small><p>Returns a final research response. It cannot create a transaction.</p></div>
+          <div class="stage-signature"><span>SWARM MIND OS</span><b>ROBINHOOD RESEARCH LAYER<br/>SWARM BUILD 0.1</b></div>
+        </section>
+
+        <aside class="right-rail">
+          <section class="mission">
+            <p class="kicker">CURRENT MISSION</p><h3>Build a read-only<br/>Robinhood token review</h3><span>AI research only. No live chain tools or transactions.</span>
+            <ol>
+              <li><i></i><b>Target</b><em>awaiting input</em></li>
+              <li><i></i><b>Research</b><em>not started</em></li>
+              <li><i></i><b>Review</b><div class="bar"><span></span></div><em>idle</em></li>
+              <li><i></i><b>Route</b><em>waiting</em></li>
+              <li><i></i><b>Execute</b><em>locked</em></li>
+            </ol>
+          </section>
+          <section class="signal"><div><p class="kicker">SWARM SIGNAL</p><small>ambient system visual</small></div><canvas id="signalCanvas" width="280" height="74"></canvas></section>
+          <section class="activity"><p class="kicker">AGENT ACTIVITY</p><ul>
+            <li><i></i><b>SCANNER</b><span>ready</span><em>idle</em></li><li><i></i><b>RISK</b><span>ready</span><em>idle</em></li><li><i></i><b>ROUTER</b><span>ready</span><em>idle</em></li><li><i></i><b>SENTINEL</b><span>ready</span><em>idle</em></li><li><i></i><b>EXECUTOR</b><span>read-only</span><em>locked</em></li>
+          </ul></section>
+          <section class="token-panel">
+            <div><p class="kicker">TOKEN TARGET</p><small>Robinhood Chain · research route</small></div>
+            <label>CONTRACT ADDRESS<input id="tokenInput" autocomplete="off" spellcheck="false" placeholder="0x…" /></label>
+            <div class="amount-row"><label>SPEND<input id="amountInput" type="number" min="0" step="0.01" placeholder="0.00" /></label><b>ETH</b></div>
+            <button id="routeBtn">Build protected route <span>→</span></button>
+            <p id="formStatus" class="form-status">Valid token address and amount required</p>
+          </section>
+        </aside>
+
+        <section class="bottom-log">
+          <div class="log-lines" id="logLines">
+            <p><time>12:14:03</time><i></i><b>SCANNER</b><span>Waiting for token information supplied by the user.</span></p>
+            <p><time>12:14:11</time><i></i><b>RISK</b><span>External contract simulation is not connected.</span></p>
+            <p><time>12:14:18</time><i></i><b>ROUTER</b><span>Live DEX quotes are not connected.</span></p>
+            <p><time>12:14:24</time><i></i><b>SENTINEL</b><span>Execution remains fail-closed.</span></p>
+          </div>
+          <div class="command"><input id="commandInput" placeholder="Ask the swarm…" aria-label="Ask the swarm"/><span>observer mode</span><button id="sendBtn" aria-label="Send command">↗</button></div>
+        </section>
+      </main>
+      <div id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

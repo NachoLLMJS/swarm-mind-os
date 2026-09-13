@@ -31,3 +31,15 @@ test('Swarm Mind OS exposes the official X account and Robinhood identity withou
   assert.match(js, /MAX_RESEARCH_AMOUNT=1_000_000/);
   assert.match(js, /amount>MAX_RESEARCH_AMOUNT/);
 });
+
+test('central research action reads ASK in Robinhood green', async () => {
+  const [html, css] = await Promise.all([
+    source('index.html'),
+    source('src/style.css'),
+  ]);
+
+  assert.match(html, /<div class="core-copy">[\s\S]*?<small>RESEARCH ROUTE<\/small><b>ASK<\/b>/);
+  assert.doesNotMatch(html, /<div class="core-copy">[\s\S]*?<b>BUY<\/b>/);
+  assert.match(css, /--robinhood:#00c805/);
+  assert.match(css, /\.core-copy b\{[^}]*color:var\(--robinhood\)/);
+});
